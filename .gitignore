@@ -9,3 +9,8 @@ build/
 ci/postgresql.yml
 
 embulk-input-oracle/driver/
+
+.classpath
+.project
+.settings/
+bin/
