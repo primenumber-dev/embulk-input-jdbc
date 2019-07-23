@@ -21,6 +21,7 @@ public class SQLServerColumnGetterFactory extends ColumnGetterFactory {
         ColumnGetter getter = super.newColumnGetter(con, task, column, option);
         switch (column.getTypeName()) {
             case "datetime":
+            case "timestamp":
                 return new TimestampWithoutTimeZoneIncrementalHandler(getter);
             default:
                 return getter;
